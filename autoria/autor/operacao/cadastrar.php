@@ -3,60 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Autoria - Cadastro </title>
+    <title> Autor - Cadastrar </title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="flex flex-col gap-16 w-fit mx-auto my-16 h-[50%]">
         <h1 class="text-center text-4xl font-semibold">
-            Cadastrar Autoria
+            Cadastrar Autor
         </h1>
 
         <form name="cdform" action="" method="post" class="px-8 py-3 border border-gray-400 rounded-lg">
             <!-- Campos -->
             <div class="grid grid-cols-2 grid-rows-4 gap-y-4 w-[380px] mx-auto mb-6">
-                <!-- Cod Autor -->
-                <label for="campo_cod_autor" class="pt-2 pl-1">
-                    Cod Autor
+                <!-- Nome -->
+                <label for="campo_nome" class="pt-2 pl-1">
+                    Nome
                 </label>
                 <input 
                     autofocus required autocomplete="off"
-                    type="number" min="0" max="4294967295" 
-                    name="campo_cod_autor" 
-                    id="campo_cod_autor"
+                    type="text" 
+                    name="campo_nome" 
+                    id="campo_nome"
                     class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
             
-                <!-- Cod Livro -->
-                <label for="campo_cod_livro" class="pt-2 pl-1">
-                    Cod Livro
-                </label>
-                <input 
-                    required autocomplete="off"
-                    type="number" min="0" max="4294967295" 
-                    name="campo_cod_livro" 
-                    id="campo_cod_livro" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
-            
-                <!-- Data de Lançamento -->
-                <label for="campo_data_lancamento" class="pt-2 pl-1">
-                    Data de Lançamento
-                </label>
-                <input 
-                    required autocomplete="off"
-                    type="date" 
-                    name="campo_data_lancamento" 
-                    id="campo_data_lancamento" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
-            
-                <!-- Editora -->
-                <label for="campo_editora" class="pt-2 pl-1">
-                    Editora
+                <!-- Sobrenome -->
+                <label for="campo_sobrenome" class="pt-2 pl-1">
+                    Sobrenome
                 </label>
                 <input 
                     required autocomplete="off"
                     type="text" 
-                    name="campo_editora" 
-                    id="campo_editora" 
+                    name="campo_sobrenome" 
+                    id="campo_sobrenome" 
+                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+            
+                <!-- Email -->
+                <label for="campo_email" class="pt-2 pl-1">
+                    Email
+                </label>
+                <input 
+                    required autocomplete="off"
+                    type="email" 
+                    name="campo_email" 
+                    id="campo_email" 
+                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+            
+                <!-- Data de Nascimento -->
+                <label for="campo_nasc" class="pt-2 pl-1">
+                    Data de Nascimento
+                </label>
+                <input 
+                    required autocomplete="off"
+                    type="date" 
+                    name="campo_nasc" 
+                    id="campo_nasc" 
                     class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
             </div>
 
@@ -75,12 +75,12 @@
             <?php 
             extract($_POST, EXTR_OVERWRITE);
             if(isset($btnenviar)) {
-                include_once "Autoria.php";
-                $pro=new Autoria();
-                $pro->setCodAutor($campo_cod_autor);
-                $pro->setCodLivro($campo_cod_livro);
-                $pro->setDataLancamento($campo_data_lancamento);
-                $pro->setEditora($campo_editora);
+                include_once "Autor.php";
+                $pro=new Autor();
+                $pro->setNomeAutor($campo_nome);
+                $pro->setSobrenome($campo_sobrenome);
+                $pro->setEmail($campo_email);
+                $pro->setNasc($campo_nasc);
                 echo $pro->salvar();
             }
             else { echo "&nbsp;"; }

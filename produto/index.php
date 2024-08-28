@@ -26,22 +26,22 @@
                 </a>
             </li>
             <li>
-                <a href="cadastro.php">
+                <a href="operacao/cadastrar.php">
                     Cadastrar
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="operacao/excluir.php">
                     Excluir
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="operacao/pesquisar.php">
                     Pesquisar
                 </a>
             </li>
             <li>
-                <a href="listar.php">
+                <a href="operacao/listar.php">
                     Listar
                 </a>
             </li>
