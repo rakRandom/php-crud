@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except this
+!.gitignore
+!README.md
+!autoria/*
+!produto/*
