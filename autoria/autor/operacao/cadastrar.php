@@ -75,7 +75,7 @@
             <?php 
             extract($_POST, EXTR_OVERWRITE);
             if(isset($btnenviar)) {
-                include_once "Autor.php";
+                include_once "../Autor.php";
                 $pro=new Autor();
                 $pro->setNomeAutor($campo_nome);
                 $pro->setSobrenome($campo_sobrenome);
@@ -87,7 +87,7 @@
             ?>
         </p>
 
-        <a href="." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
+        <a href=".." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
             Voltar
         </a>
     </div>

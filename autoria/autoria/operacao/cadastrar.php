@@ -75,7 +75,7 @@
             <?php 
             extract($_POST, EXTR_OVERWRITE);
             if(isset($btnenviar)) {
-                include_once "Autoria.php";
+                include_once "../Autoria.php";
                 $pro=new Autoria();
                 $pro->setCodAutor($campo_cod_autor);
                 $pro->setCodLivro($campo_cod_livro);
@@ -87,7 +87,7 @@
             ?>
         </p>
 
-        <a href="." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
+        <a href=".." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
             Voltar
         </a>
     </div>

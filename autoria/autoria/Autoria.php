@@ -1,6 +1,6 @@
 <?php
 
-include_once '../Conectar.php';
+include_once '../../Conectar.php';
 
 class Autoria
 {
@@ -71,8 +71,8 @@ class Autoria
         try
         {
             $this->conn = new Conectar();
-            $sql = $this->conn->prepare("select * from autoria where cod_autor = ?"); 
-            @$sql-> bindParam(1, $this->getCodAutor(), PDO::PARAM_STR);
+            $sql = $this->conn->prepare("select * from autoria where editora like ?"); 
+            @$sql-> bindParam(1, $this->getEditora(), PDO::PARAM_STR);
             $sql->execute();
             return $sql->fetchAll();
             $this->conn = null;
@@ -124,8 +124,9 @@ class Autoria
         try
         {
             $this->conn = new Conectar();
-            $sql = $this->conn->prepare("delete from autoria where cod_autor = ?"); 
+            $sql = $this->conn->prepare("delete from autoria where cod_autor = ? and cod_livro = ?"); 
             @$sql-> bindParam(1, $this->getCodAutor(), PDO::PARAM_STR);
+            @$sql-> bindParam(2, $this->getCodLivro(), PDO::PARAM_STR);
             if ($sql->execute() == 1)
                 return "Excluido com sucesso!";
             else

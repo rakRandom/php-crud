@@ -8,9 +8,9 @@
 </head>
 <body class="max-h-screen">
     <?php
-    include_once 'Produtos.php';
+    include_once '../Produto.php';
 
-    $p = new Produtos();
+    $p = new Produto();
     $pro_bd = $p->listar();
     ?>
 
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <a href="." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
+        <a href=".." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
             Voltar
         </a>
     </div>

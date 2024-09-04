@@ -51,8 +51,8 @@
             <?php 
             extract($_POST, EXTR_OVERWRITE);
             if(isset($btnenviar)) {
-                include_once "Produtos.php";
-                $pro=new Produtos();
+                include_once "../Produto.php";
+                $pro=new Produto();
                 $pro->setNome($campo_nome);
                 $pro->setEstoque($campo_estoque);
                 echo $pro->salvar();
@@ -61,7 +61,7 @@
             ?>
         </p>
 
-        <a href="." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
+        <a href=".." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
             Voltar
         </a>
     </div>

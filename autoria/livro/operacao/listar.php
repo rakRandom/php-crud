@@ -8,7 +8,7 @@
 </head>
 <body class="max-h-screen">
     <?php
-    include_once 'Livro.php';
+    include_once '../Livro.php';
 
     $livro = new Livro();
     $listar_livro = $livro->listar();
@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <a href="." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
+        <a href=".." class="block w-fit mx-auto px-4 py-2 rounded border border-gray-300 transition-all hover:shadow-md hover:-translate-y-0.5">
             Voltar
         </a>
     </div>
