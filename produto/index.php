@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="operacao/alterar.php">
                     Alterar
                 </a>
             </li>
