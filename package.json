@@ -1,0 +1,23 @@
+{
+  "name": "php-crud",
+  "version": "1.0.0",
+  "description": "Projeto de CRUD usando PHP e MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakRandom/php-crud.git"
+  },
+  "author": "rakRandom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakRandom/php-crud/issues"
+  },
+  "homepage": "https://github.com/rakRandom/php-crud#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

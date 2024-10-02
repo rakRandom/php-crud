@@ -1,8 +1,1 @@
-# Ignore everything
-*
-
-# Except this
-!.gitignore
-!README.md
-!autoria/*
-!produto/*
+node_modules/

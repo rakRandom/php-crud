@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .regular-title {
+        @apply 
+            text-center text-4xl font-semibold
+        ;
+    }
+    
+    .transform-button {
+        @apply 
+            text-center transition-transform
+            hover:-translate-y-[0.125rem]
+            *:block *:w-full *:p-2 
+            *:rounded *:border *:border-transparent *:transition-colors
+            hover:*:border-gray-300 hover:*:shadow-md 
+        ;
+    }
+}
