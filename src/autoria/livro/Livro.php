@@ -107,10 +107,13 @@ class Livro
         try
         {
             $this->conn = new Conectar();
-            $sql = $this->conn->prepare("update livro set titulo = ?, categoria = ? where cod_livro = ?"); 
+            $sql = $this->conn->prepare("update livro set titulo = ?, categoria = ?, isbn = ?, idioma = ?, qtde_pag = ? where cod_livro = ?"); 
             @$sql-> bindParam(1, $this->getTitulo(), PDO::PARAM_STR);
             @$sql-> bindParam(2, $this->getCategoria(), PDO::PARAM_STR); 
-            @$sql-> bindParam(3, $this->getCodLivro(), PDO::PARAM_STR);
+            @$sql-> bindParam(3, $this->getIsbn(), PDO::PARAM_STR);
+            @$sql-> bindParam(4, $this->getIdioma(), PDO::PARAM_STR);
+            @$sql-> bindParam(5, $this->getQtdePag(), PDO::PARAM_STR);
+            @$sql-> bindParam(6, $this->getCodLivro(), PDO::PARAM_STR);
 
             if ($sql->execute() == 1)
                 return "Registro alterado com sucesso!";
