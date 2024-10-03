@@ -669,6 +669,10 @@ video {
   height: 120px;
 }
 
+.h-\[240px\] {
+  height: 240px;
+}
+
 .h-\[480px\] {
   height: 480px;
 }
@@ -679,6 +683,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[360px\] {
+  height: 360px;
 }
 
 .max-h-screen {
@@ -1045,6 +1053,11 @@ video {
 
 .hover\:-translate-y-0\.5:hover {
   --tw-translate-y: -0.125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-0:hover {
+  --tw-translate-y: -0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

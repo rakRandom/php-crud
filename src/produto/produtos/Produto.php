@@ -1,6 +1,6 @@
 <?php
 
-include_once 'Conectar.php';
+include_once '../../Conectar.php';
 
 class Produto
 {
