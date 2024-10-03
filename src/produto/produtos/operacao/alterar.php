@@ -36,8 +36,7 @@
                         flex flex-col
                         text-left 
                         w-[600px] 
-                        mx-auto p-8 pt-4 
-                        border border-gray-400 rounded-lg
+                        mx-auto
                         ">
                         <!-- Header -->
                         <div role="row" class="grid grid-cols-8 text-lg font-semibold mr-4 *:px-2 *:pb-2">
@@ -60,17 +59,31 @@
                                 [&>*:nth-child(odd)]:bg-gray-200 *:*:px-2"
                             >
                             <?php foreach ($p_lista as $p_registro) { ?>
-                            <div role="row" class="
-                                grid grid-cols-8 py-0.5
-                                ">
+                            <div 
+                                role="row" 
+                                class="
+                                    grid grid-cols-8 py-0.5
+                                    *:*:w-full *:*:px-2 *:*:py-0.5"
+                                >
                                 <div role="cell" class="col-span-1">
-                                    <?php echo $p_registro[0]; ?>
+                                    <label for="id_prod"><?php echo $p_registro[0]; ?></label>
+                                    <input 
+                                        hidden
+                                        type="text" 
+                                        name="id_prod" 
+                                        value="<?php echo $p_registro[0]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-5">
-                                    <?php echo $p_registro[1]; ?> 
+                                    <input 
+                                        type="text" 
+                                        name="nome_prod" 
+                                        value="<?php echo $p_registro[1]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-2">
-                                    <?php echo $p_registro[2]; ?>
+                                    <input 
+                                        type="number" min="0" 
+                                        name="estoque_prod" 
+                                        value="<?php echo $p_registro[2]; ?>">
                                 </div>
                             </div>
                             <?php } ?>
@@ -112,6 +125,19 @@
                 </div>
             </form>
         </div>
+
+        <p class="text-center">
+            <?php
+                if(isset($btnalterar)) {
+                    include_once '../Produto.php';
+                    $p = new Produto();
+                    $p->setId($id_prod);
+                    $p->setNome($nome_prod);
+                    $p->setEstoque($estoque_prod);
+                    echo $p->alterar2();
+                }
+            ?>
+        </p>
 
         <?php include("../../../componentes/BotaoVoltar.php") ?>
     </div>
