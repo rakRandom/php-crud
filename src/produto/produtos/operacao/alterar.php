@@ -28,7 +28,8 @@
                     <h2 class="font-medium text-lg text-center">
                         Lista de produtos encontrados
                     </h2>
-
+                    <hr>
+                    
                     <!-- Table -->
                     <div 
                         role="table"
@@ -63,7 +64,7 @@
                                 role="row" 
                                 class="
                                     grid grid-cols-8 py-0.5
-                                    *:*:w-full *:*:px-2 *:*:py-0.5"
+                                    *:*:w-full *:*:h-full *:*:regular-input *:*:px-2 *:*:py-0.5"
                                 >
                                 <div role="cell" class="col-span-1">
                                     <label for="id_prod"><?php echo $p_registro[0]; ?></label>

@@ -29,7 +29,8 @@
                     <h2 class="font-medium text-lg text-center">
                         Lista de Autorias encontrados
                     </h2>
-
+                    <hr>
+                    
                     <!-- Table -->
                     <div 
                         role="table"
@@ -40,18 +41,18 @@
                             mx-auto"
                         >
                         <!-- Header -->
-                        <div role="row" class="grid grid-cols-8 text-lg font-semibold mr-4 *:px-2 *:pb-2">
-                            <div role="cell" class="col-span-1">
-                                cod_autor
-                            </div>
-                            <div role="cell" class="col-span-1">
-                                cod_livro
+                        <div role="row" class="grid grid-cols-11 text-lg font-semibold mr-4 *:px-2 *:pb-2">
+                            <div role="cell" class="col-span-2">
+                                Cód. Autor
                             </div>
                             <div role="cell" class="col-span-2">
-                                data_lancamento
+                                Cód. Livro
+                            </div>
+                            <div role="cell" class="col-span-3">
+                                Data de Lançamento
                             </div>
                             <div role="cell" class="col-span-4">
-                                editora
+                                Editora
                             </div>
                         </div>
                         
@@ -66,26 +67,30 @@
                             <div 
                                 role="row" 
                                 class="
-                                    grid grid-cols-8 py-0.5
+                                    grid grid-cols-11 py-0.5
                                     *:*:w-full *:*:h-full *:*:regular-input *:*:px-2 *:*:py-0.5"
                                 >
-                                <div role="cell" class="col-span-1">
-                                    <label for="cod_autor" class="flex align-center"><?php echo $p_registro[0]; ?></label>
+                                <div role="cell" class="col-span-2">
+                                    <label for="cod_autor" class="flex align-center">
+                                        <?php echo $p_registro[0]; ?>
+                                    </label>
                                     <input 
                                         hidden
                                         type="text" 
                                         name="cod_autor" 
                                         value="<?php echo $p_registro[0]; ?>">
                                 </div>
-                                <div role="cell" class="col-span-1">
-                                    <label for="cod_livro" class="flex align-center"><?php echo $p_registro[1]; ?></label>
+                                <div role="cell" class="col-span-2">
+                                    <label for="cod_livro" class="flex align-center">
+                                        <?php echo $p_registro[1]; ?>
+                                    </label>
                                     <input 
                                         hidden
                                         type="text" 
                                         name="cod_livro" 
                                         value="<?php echo $p_registro[1]; ?>">
                                 </div>
-                                <div role="cell" class="col-span-2">
+                                <div role="cell" class="col-span-3">
                                     <input 
                                         type="date"
                                         name="data_lanc" 

@@ -28,7 +28,8 @@
                     <h2 class="font-medium text-lg text-center">
                         Lista de Autores encontrados
                     </h2>
-
+                    <hr>
+                    
                     <!-- Table -->
                     <div 
                         role="table"
@@ -44,16 +45,16 @@
                                 ID
                             </div>
                             <div role="cell" class="col-span-3">
-                                nome_autor
+                                Nome
                             </div>
                             <div role="cell" class="col-span-4">
-                                sobrenome
+                                Sobrenome
                             </div>
                             <div role="cell" class="col-span-5">
-                                email
+                                E-mail
                             </div>
                             <div role="cell" class="col-span-3">
-                                nasc
+                                Data de Nasc.
                             </div>
                         </div>
                         
@@ -69,10 +70,12 @@
                                 role="row" 
                                 class="
                                     grid grid-cols-[repeat(16,minmax(0,1fr))] py-0.5
-                                    *:*:w-full *:*:px-2 *:*:py-0.5"
+                                    *:*:w-full *:*:h-full *:*:regular-input *:*:px-2 *:*:py-0.5"
                                 >
                                 <div role="cell" class="col-span-1">
-                                    <label for="cod_autor"><?php echo $p_registro[0]; ?></label>
+                                    <label for="cod_autor" class="flex align-center">
+                                        <?php echo $p_registro[0]; ?>
+                                    </label>
                                     <input 
                                         hidden
                                         type="text" 

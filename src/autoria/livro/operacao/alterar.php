@@ -28,7 +28,8 @@
                     <h2 class="font-medium text-lg text-center">
                         Lista de livros encontrados
                     </h2>
-
+                    <hr>
+                    
                     <!-- Table -->
                     <div 
                         role="table"
@@ -43,20 +44,20 @@
                             <div role="cell" class="col-span-1">
                                 ID
                             </div>
-                            <div role="cell" class="col-span-8">
-                                titulo
+                            <div role="cell" class="col-span-7">
+                                Titulo
                             </div>
-                            <div role="cell" class="col-span-2">
-                                categoria
+                            <div role="cell" class="col-span-3">
+                                Categoria
                             </div>
                             <div role="cell" class="col-span-3">
                                 ISBN
                             </div>
                             <div role="cell" class="col-span-2">
-                                idioma
+                                Idioma
                             </div>
                             <div role="cell" class="col-span-2">
-                                qtde_pag
+                                Qt. Pág.
                             </div>
                         </div>
                         
@@ -72,23 +73,25 @@
                                 role="row" 
                                 class="
                                     grid grid-cols-[repeat(18,minmax(0,1fr))] py-0.5
-                                    *:*:w-full *:*:px-2 *:*:py-0.5"
+                                    *:*:w-full *:*:h-full *:*:regular-input *:*:px-2 *:*:py-0.5"
                                 >
                                 <div role="cell" class="col-span-1">
-                                    <label for="cod_livro"><?php echo $p_registro[0]; ?></label>
+                                    <label for="cod_livro" class="flex align-center">
+                                        <?php echo $p_registro[0]; ?>
+                                    </label>
                                     <input 
                                         hidden
                                         type="text" 
                                         name="cod_livro" 
                                         value="<?php echo $p_registro[0]; ?>">
                                 </div>
-                                <div role="cell" class="col-span-8">
+                                <div role="cell" class="col-span-7">
                                     <input 
                                         type="text" 
                                         name="titulo_livro" 
                                         value="<?php echo $p_registro[1]; ?>">
                                 </div>
-                                <div role="cell" class="col-span-2">
+                                <div role="cell" class="col-span-3">
                                     <input 
                                         type="text"
                                         name="categoria_livro" 
