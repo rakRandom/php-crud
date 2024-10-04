@@ -30,18 +30,18 @@
             border border-gray-400 rounded-lg
             ">
             <!-- Header -->
-            <div role="row" class="grid grid-cols-8 text-lg font-semibold mr-4 *:px-2 *:pb-2">
-                <div role="cell" class="col-span-1">
-                    cod_autor
-                </div>
-                <div role="cell" class="col-span-1">
-                    cod_livro
+            <div role="row" class="grid grid-cols-11 text-lg font-semibold mr-4 *:px-2 *:pb-2">
+                <div role="cell" class="col-span-2">
+                    Cód. Autor
                 </div>
                 <div role="cell" class="col-span-2">
-                    data_lancamento
+                    Cód. Livro
+                </div>
+                <div role="cell" class="col-span-3">
+                    Data de Lanç.
                 </div>
                 <div role="cell" class="col-span-4">
-                    editora
+                    Editora
                 </div>
             </div>
 
@@ -52,15 +52,15 @@
                 ">
                 <?php foreach ($listar_autoria as $registro) { ?>
                 <div role="row" class="
-                    grid grid-cols-8 py-0.5
+                    grid grid-cols-11 py-0.5
                     ">
-                    <div role="cell" class="col-span-1">
+                    <div role="cell" class="col-span-2">
                         <?php echo $registro[0]; ?>
                     </div>
-                    <div role="cell" class="col-span-1">
+                    <div role="cell" class="col-span-2">
                         <?php echo $registro[1]; ?> 
                     </div>
-                    <div role="cell" class="col-span-2">
+                    <div role="cell" class="col-span-3">
                         <?php echo $registro[2]; ?>
                     </div>
                     <div role="cell" class="col-span-4">

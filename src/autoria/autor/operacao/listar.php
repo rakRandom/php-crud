@@ -30,21 +30,21 @@
             border border-gray-400 rounded-lg
             ">
             <!-- Header -->
-            <div role="row" class="grid grid-cols-[repeat(13,minmax(0,1fr))] text-lg font-semibold mr-4 *:px-2 *:pb-2">
+            <div role="row" class="grid grid-cols-[repeat(16,minmax(0,1fr))] text-lg font-semibold mr-4 *:px-2 *:pb-2">
                 <div role="cell" class="col-span-1">
-                    id
-                </div>
-                <div role="cell" class="col-span-2">
-                    nome_autor
+                    ID
                 </div>
                 <div role="cell" class="col-span-3">
-                    sobrenome
+                    Nome
+                </div>
+                <div role="cell" class="col-span-4">
+                    Sobrenome
                 </div>
                 <div role="cell" class="col-span-5">
-                    email
+                    E-mail
                 </div>
-                <div role="cell" class="col-span-2">
-                    nasc
+                <div role="cell" class="col-span-3">
+                    Data de Nasc.
                 </div>
             </div>
 
@@ -55,21 +55,21 @@
                 ">
                 <?php foreach ($listar_autor as $registro) { ?>
                 <div role="row" class="
-                    grid grid-cols-[repeat(13,minmax(0,1fr))] py-0.5
+                    grid grid-cols-[repeat(16,minmax(0,1fr))] py-0.5
                     ">
                     <div role="cell" class="col-span-1">
                         <?php echo $registro[0]; ?>
                     </div>
-                    <div role="cell" class="col-span-2">
+                    <div role="cell" class="col-span-3">
                         <?php echo $registro[1]; ?> 
                     </div>
-                    <div role="cell" class="col-span-3">
+                    <div role="cell" class="col-span-4">
                         <?php echo $registro[2]; ?>
                     </div>
                     <div role="cell" class="col-span-5">
                         <?php echo $registro[3]; ?>
                     </div>
-                    <div role="cell" class="col-span-2">
+                    <div role="cell" class="col-span-3">
                         <?php echo $registro[4]; ?>
                     </div>
                 </div>

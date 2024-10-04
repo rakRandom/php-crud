@@ -32,22 +32,22 @@
             <!-- Header -->
             <div role="row" class="grid grid-cols-[repeat(18,minmax(0,1fr))] text-lg font-semibold mr-4 *:px-2 *:pb-2">
                 <div role="cell" class="col-span-1">
-                    id
+                    ID
                 </div>
-                <div role="cell" class="col-span-8">
-                    titulo
+                <div role="cell" class="col-span-7">
+                    Titulo
                 </div>
-                <div role="cell" class="col-span-2">
-                    categoria
+                <div role="cell" class="col-span-3">
+                    Categoria
                 </div>
                 <div role="cell" class="col-span-3">
                     ISBN
                 </div>
                 <div role="cell" class="col-span-2">
-                    idioma
+                    Idioma
                 </div>
                 <div role="cell" class="col-span-2">
-                    qtde_pag
+                    Qt. Pág.
                 </div>
             </div>
 
@@ -63,10 +63,10 @@
                     <div role="cell" class="col-span-1">
                         <?php echo $registro[0]; ?>
                     </div>
-                    <div role="cell" class="col-span-8">
+                    <div role="cell" class="col-span-7">
                         <?php echo $registro[1]; ?> 
                     </div>
-                    <div role="cell" class="col-span-2">
+                    <div role="cell" class="col-span-3">
                         <?php echo $registro[2]; ?>
                     </div>
                     <div role="cell" class="col-span-3">
