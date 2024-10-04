@@ -23,8 +23,10 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav>  
+    </div>
 
+    <div class="absolute top-8 left-8">
         <?php include("../componentes/BotaoVoltar.php") ?>
     </div>
 </body>

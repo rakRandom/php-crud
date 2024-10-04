@@ -14,6 +14,8 @@
     $listar_autor = $autor->listar();
     ?>
 
+    <?php include("../../../componentes/BarraMenuInterna.php") ?>
+
     <div class="flex flex-col gap-8 w-fit mx-auto mt-8 h-[50%]">
     <h1 class="regular-title">
             Relação de Autor Cadastrados

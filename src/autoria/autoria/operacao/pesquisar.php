@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../../assets/css/output.css">
 </head>
 <body>
+    <?php include("../../../componentes/BarraMenuInterna.php") ?>
+
     <div class="flex flex-col gap-16 w-fit mx-auto my-16 h-[50%]">
         <h1 class="regular-title">
             Pesquisar Autoria

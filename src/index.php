@@ -12,8 +12,6 @@
             Menu - Banco de Dados
         </h1>
 
-        
-
         <nav>
         <p class="text-lg text-center mb-4">
             Selecione um Banco de Dados para acessar
