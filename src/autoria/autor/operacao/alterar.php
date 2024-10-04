@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Autor - Alterar </title>
-    <link rel="stylesheet" href="../../../output.css">
+    <link rel="stylesheet" href="../../../assets/css/output.css">
 </head>
 <body>
     <div class="flex flex-col gap-16 w-fit mx-auto my-16 h-[50%]">
@@ -29,7 +29,7 @@
                         Lista de Autores encontrados
                     </h2>
                     <hr>
-                    
+
                     <!-- Table -->
                     <div 
                         role="table"
