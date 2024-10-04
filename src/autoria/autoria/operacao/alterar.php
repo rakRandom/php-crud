@@ -30,14 +30,14 @@
                         Lista de Autorias encontrados
                     </h2>
                     <hr>
-                    
+
                     <!-- Table -->
                     <div 
                         role="table"
                         class="
                             flex flex-col
                             text-left 
-                            w-[800px] 
+                            w-[600px] 
                             mx-auto"
                         >
                         <!-- Header -->
@@ -49,7 +49,7 @@
                                 Cód. Livro
                             </div>
                             <div role="cell" class="col-span-3">
-                                Data de Lançamento
+                                Data de Lanç.
                             </div>
                             <div role="cell" class="col-span-4">
                                 Editora
@@ -108,7 +108,7 @@
                     </div>
                 <?php } else { ?>
                     <h2 class="font-medium text-lg text-center">
-                        Informe o Código do Autor e Livro da Autoria desejada
+                        Informe o Código do Autor e Livro da Autoria <br> desejada
                     </h2>
                     <hr>
                     <div class="flex gap-4 items-center w-full mx-auto my-4 text-lg">

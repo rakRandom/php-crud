@@ -123,8 +123,11 @@ class Autoria
         try
         {
             $this->conn = new Conectar();
-            $sql = $this->conn->prepare("update autoria set cod_livro = ?"); 
-            @$sql-> bindParam(1, $this->getCodLivro(), PDO::PARAM_STR);
+            $sql = $this->conn->prepare("update autoria set data_lancamento = ?, editora = ? where cod_autor = ? and cod_livro = ?"); 
+            @$sql-> bindParam(1, $this->getDataLancamento(), PDO::PARAM_STR);
+            @$sql-> bindParam(2, $this->getEditora(), PDO::PARAM_STR);
+            @$sql-> bindParam(3, $this->getCodAutor(), PDO::PARAM_STR);
+            @$sql-> bindParam(4, $this->getCodLivro(), PDO::PARAM_STR);
 
             if ($sql->execute() == 1)
                 return "Registro alterado com sucesso!";
