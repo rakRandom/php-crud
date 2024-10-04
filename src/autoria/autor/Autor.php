@@ -97,10 +97,12 @@ class Autor
         try
         {
             $this->conn = new Conectar();
-            $sql = $this->conn->prepare("update autor set nome_autor = ?, sobrenome = ? where cod_autor = ?"); 
+            $sql = $this->conn->prepare("update autor set nome_autor = ?, sobrenome = ?, email = ?, nasc = ? where cod_autor = ?"); 
             @$sql-> bindParam(1, $this->getNomeAutor(), PDO::PARAM_STR);
             @$sql-> bindParam(2, $this->getSobrenome(), PDO::PARAM_STR); 
-            @$sql-> bindParam(3, $this->getCodAutor(), PDO::PARAM_STR);
+            @$sql-> bindParam(3, $this->getEmail(), PDO::PARAM_STR); 
+            @$sql-> bindParam(4, $this->getNasc(), PDO::PARAM_STR); 
+            @$sql-> bindParam(5, $this->getCodAutor(), PDO::PARAM_STR);
 
             if ($sql->execute() == 1)
                 return "Registro alterado com sucesso!";
