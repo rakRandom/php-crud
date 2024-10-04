@@ -62,7 +62,7 @@
 
                     if (count($autores) != 0) {
                         ?>
-                        <h1 class="font-medium text-lg mb-2 underline underline-offset-4">
+                        <h1 class="smaller-title mb-2 underline underline-offset-4">
                             Resultado
                         </h1>
                         <div 
