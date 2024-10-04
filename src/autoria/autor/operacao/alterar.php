@@ -27,7 +27,7 @@
                         $p->setCodAutor($cod_autor);
                         $p_lista = $p->alterar();
                 ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Lista de Autores encontrados
                     </h2>
                     <hr>
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 <?php } else { ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Informe o Código do Autor desejado
                     </h2>
                     <hr>

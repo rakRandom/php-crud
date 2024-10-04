@@ -28,7 +28,7 @@
                         $p->setCodLivro($cod_livro);
                         $p_lista = $p->alterar();
                 ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Lista de Autorias encontrados
                     </h2>
                     <hr>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 <?php } else { ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Informe o Código do Autor e Livro da Autoria <br> desejada
                     </h2>
                     <hr>

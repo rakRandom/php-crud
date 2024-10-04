@@ -16,7 +16,7 @@
 
         <div>
             <form name="exform" action="" method="post" class="flex flex-col gap-2 px-6 py-3 border border-gray-400 rounded-lg">
-                <h2 class="font-medium text-lg text-center">
+                <h2 class="smaller-title">
                     Informe o Código do Autor e do Livro
                 </h2>
                 <hr>

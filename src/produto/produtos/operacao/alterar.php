@@ -27,7 +27,7 @@
                         $p->setId($id_prod);
                         $p_lista = $p->alterar();
                 ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Lista de produtos encontrados
                     </h2>
                     <hr>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 <?php } else { ?>
-                    <h2 class="font-medium text-lg text-center">
+                    <h2 class="smaller-title">
                         Informe o ID do Produto desejado
                     </h2>
                     <hr>

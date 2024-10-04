@@ -24,7 +24,7 @@
                 max-w-[380px] px-6 py-3 mx-auto
                 border border-gray-400 rounded-lg
                 ">
-                <h2 class="font-medium text-lg text-center">
+                <h2 class="smaller-title">
                     Informe o Título do Livro desejado
                 </h2>
                 <hr>

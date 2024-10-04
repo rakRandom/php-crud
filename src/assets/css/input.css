@@ -5,7 +5,17 @@
 @layer components {
     .regular-title {
         @apply 
-            text-center text-4xl font-semibold
+            text-center 
+            text-4xl 
+            font-semibold
+        ;
+    }
+
+    .smaller-title {
+        @apply 
+            font-medium 
+            text-lg 
+            text-center
         ;
     }
 
