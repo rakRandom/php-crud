@@ -24,7 +24,7 @@
                     type="number" min="0" max="4294967295" 
                     name="campo_cod_autor" 
                     id="campo_cod_autor"
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Cod Livro -->
                 <label for="campo_cod_livro" class="pt-2 pl-1">
@@ -35,7 +35,7 @@
                     type="number" min="0" max="4294967295" 
                     name="campo_cod_livro" 
                     id="campo_cod_livro" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Data de Lançamento -->
                 <label for="campo_data_lancamento" class="pt-2 pl-1">
@@ -46,7 +46,7 @@
                     type="date" 
                     name="campo_data_lancamento" 
                     id="campo_data_lancamento" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Editora -->
                 <label for="campo_editora" class="pt-2 pl-1">
@@ -57,7 +57,7 @@
                     type="text" 
                     name="campo_editora" 
                     id="campo_editora" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             </div>
 
             <!-- Botões -->

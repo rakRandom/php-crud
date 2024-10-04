@@ -34,7 +34,7 @@
                         name="autor_nome" 
                         id="autor_nome" 
                         placeholder="Nome"
-                        class="flex-1 py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                        class="flex-1 regular-input">
                 </div>
                 
                 <!-- Botões -->

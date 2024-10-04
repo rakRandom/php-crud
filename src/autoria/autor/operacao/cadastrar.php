@@ -24,7 +24,7 @@
                     type="text" 
                     name="campo_nome" 
                     id="campo_nome"
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Sobrenome -->
                 <label for="campo_sobrenome" class="pt-2 pl-1">
@@ -35,7 +35,7 @@
                     type="text" 
                     name="campo_sobrenome" 
                     id="campo_sobrenome" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Email -->
                 <label for="campo_email" class="pt-2 pl-1">
@@ -46,7 +46,7 @@
                     type="email" 
                     name="campo_email" 
                     id="campo_email" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Data de Nascimento -->
                 <label for="campo_nasc" class="pt-2 pl-1">
@@ -57,7 +57,7 @@
                     type="date" 
                     name="campo_nasc" 
                     id="campo_nasc" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             </div>
 
             <!-- Botões -->

@@ -8,6 +8,17 @@
             text-center text-4xl font-semibold
         ;
     }
+
+    .regular-input {
+        @apply 
+            px-2
+            py-1 
+            border-2 
+            rounded-md 
+            outline-none 
+            focus:border-orange-500
+        ;
+    }
     
     .transform-button {
         @apply 

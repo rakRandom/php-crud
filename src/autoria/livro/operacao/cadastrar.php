@@ -24,7 +24,7 @@
                     type="text" 
                     name="campo_titulo" 
                     id="campo_titulo"
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- Categoria -->
                 <label for="campo_categoria" class="pt-2 pl-1">
@@ -35,7 +35,7 @@
                     type="text" 
                     name="campo_categoria" 
                     id="campo_categoria" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             
                 <!-- ISBN -->
                 <label for="campo_isbn" class="pt-2 pl-1">
@@ -46,7 +46,7 @@
                     type="number" 
                     name="campo_isbn" 
                     id="campo_isbn" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
 
                 <!-- Idioma -->
                 <label for="campo_idioma" class="pt-2 pl-1">
@@ -57,7 +57,7 @@
                     type="text" 
                     name="campo_idioma" 
                     id="campo_idioma" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
 
                 <!-- Quantidade/Qt de Páginas -->
                 <label for="campo_qtde_pag" class="pt-2 pl-1">
@@ -68,7 +68,7 @@
                     type="number" min="0" max="4294967295" 
                     name="campo_qtde_pag" 
                     id="campo_qtde_pag" 
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             </div>
 
             <!-- Botões -->

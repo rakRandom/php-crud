@@ -26,14 +26,14 @@
                     type="text" 
                     name="campo_nome" 
                     id="campo-nome"
-                    class="col-span-2 py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="col-span-2 regular-input">
                 <input 
                     required autocomplete="off"
                     type="number" 
                     name="campo_estoque" 
                     id="campo-estoque" 
                     min="0" max="4294967295"
-                    class="py-1 px-2 border-2 rounded-md outline-none focus:border-orange-500">
+                    class="regular-input">
             </div>
 
             <!-- Botões -->

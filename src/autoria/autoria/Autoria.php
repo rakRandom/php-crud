@@ -105,6 +105,24 @@ class Autoria
         try
         {
             $this->conn = new Conectar();
+            $sql = $this->conn->prepare("select * from autoria where cod_autor = ? and cod_livro = ?"); 
+            @$sql-> bindParam(1, $this->getCodAutor(), PDO::PARAM_STR);
+            @$sql-> bindParam(2, $this->getCodLivro(), PDO::PARAM_STR);
+            $sql->execute();
+            return $sql->fetchall();
+            $this->conn = null;
+        }
+        catch (PDOException $exc)
+        {
+            echo "Erro ao salvar o registro. " . $exc->getMessage();
+        }
+    }
+
+    function alterar2()
+    {
+        try
+        {
+            $this->conn = new Conectar();
             $sql = $this->conn->prepare("update autoria set cod_livro = ?"); 
             @$sql-> bindParam(1, $this->getCodLivro(), PDO::PARAM_STR);
 
