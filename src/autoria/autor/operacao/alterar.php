@@ -86,24 +86,28 @@
                                 </div>
                                 <div role="cell" class="col-span-3">
                                     <input 
+                                        required
                                         type="text" 
                                         name="nome_autor" 
                                         value="<?php echo $p_registro[1]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-4">
                                     <input 
+                                        required
                                         type="text"
                                         name="sobrenome_autor" 
                                         value="<?php echo $p_registro[2]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-5">
                                     <input 
+                                        required
                                         type="text" 
                                         name="email_autor" 
                                         value="<?php echo $p_registro[3]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-3">
                                     <input 
+                                        required
                                         type="date" 
                                         name="nasc_autor" 
                                         value="<?php echo $p_registro[4]; ?>">

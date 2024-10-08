@@ -94,12 +94,14 @@
                                 </div>
                                 <div role="cell" class="col-span-3">
                                     <input 
+                                        required
                                         type="date"
                                         name="data_lanc" 
                                         value="<?php echo $p_registro[2]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-4">
                                     <input 
+                                        required
                                         type="text" 
                                         name="editora" 
                                         value="<?php echo $p_registro[3]; ?>">

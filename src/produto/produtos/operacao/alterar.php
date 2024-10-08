@@ -78,12 +78,14 @@
                                 </div>
                                 <div role="cell" class="col-span-5">
                                     <input 
+                                        required
                                         type="text" 
                                         name="nome_prod" 
                                         value="<?php echo $p_registro[1]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-2">
                                     <input 
+                                        required
                                         type="number" min="0" 
                                         name="estoque_prod" 
                                         value="<?php echo $p_registro[2]; ?>">

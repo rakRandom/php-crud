@@ -89,30 +89,35 @@
                                 </div>
                                 <div role="cell" class="col-span-7">
                                     <input 
+                                        required
                                         type="text" 
                                         name="titulo_livro" 
                                         value="<?php echo $p_registro[1]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-3">
                                     <input 
+                                        required
                                         type="text"
                                         name="categoria_livro" 
                                         value="<?php echo $p_registro[2]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-3">
                                     <input 
+                                        required
                                         type="text" 
                                         name="isbn_livro" 
                                         value="<?php echo $p_registro[3]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-2">
                                     <input 
+                                        required
                                         type="text" 
                                         name="idioma_livro" 
                                         value="<?php echo $p_registro[4]; ?>">
                                 </div>
                                 <div role="cell" class="col-span-2">
                                     <input 
+                                        required
                                         type="number" min="0" 
                                         name="qtde_pag_livro" 
                                         value="<?php echo $p_registro[5]; ?>">
