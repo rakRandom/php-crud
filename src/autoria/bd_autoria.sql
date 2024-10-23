@@ -2,10 +2,9 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 24/05/2024 às 06:21
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Host: localhost
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `bd_autoria`
+-- Database: `bd_autoria`
 --
 CREATE DATABASE IF NOT EXISTS `bd_autoria` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `bd_autoria`;
@@ -26,7 +25,7 @@ USE `bd_autoria`;
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `autor`
+-- Table structure for table `autor`
 --
 
 CREATE TABLE `autor` (
@@ -38,7 +37,7 @@ CREATE TABLE `autor` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `autor`
+-- Dumping data for table `autor`
 --
 
 INSERT INTO `autor` (`cod_autor`, `nome_autor`, `sobrenome`, `email`, `nasc`) VALUES
@@ -53,7 +52,7 @@ INSERT INTO `autor` (`cod_autor`, `nome_autor`, `sobrenome`, `email`, `nasc`) VA
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `autoria`
+-- Table structure for table `autoria`
 --
 
 CREATE TABLE `autoria` (
@@ -64,7 +63,7 @@ CREATE TABLE `autoria` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `autoria`
+-- Dumping data for table `autoria`
 --
 
 INSERT INTO `autoria` (`cod_autor`, `cod_livro`, `data_lancamento`, `editora`) VALUES
@@ -80,7 +79,7 @@ INSERT INTO `autoria` (`cod_autor`, `cod_livro`, `data_lancamento`, `editora`) V
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livro`
+-- Table structure for table `livro`
 --
 
 CREATE TABLE `livro` (
@@ -93,7 +92,7 @@ CREATE TABLE `livro` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `livro`
+-- Dumping data for table `livro`
 --
 
 INSERT INTO `livro` (`cod_livro`, `titulo`, `categoria`, `ISBN`, `idioma`, `qtde_pag`) VALUES
@@ -103,34 +102,54 @@ INSERT INTO `livro` (`cod_livro`, `titulo`, `categoria`, `ISBN`, `idioma`, `qtde
 (4, 'A Hora da Estrela', 'Ficção', '9788520925561', 'PT-BR', 88),
 (5, 'Grande Sertão: Veredas', 'Romance', '9788535920139', 'PT-BR', 624);
 
+-- --------------------------------------------------------
+
 --
--- Índices para tabelas despejadas
+-- Table structure for table `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `nome` varchar(32) NOT NULL COMMENT 'Não deve ter menos de 3 caracteres.\r\nApenas letras, maiúsculas ou minúsculas, do alfabeto romano, além de números do sistema de numeração decimal tradicional e o ponto final (valor 46 da tabela ascii).',
+  `senha` varchar(32) NOT NULL COMMENT 'Não deve ter menos de 8 caracteres.\r\nDeve conter pelo menos um dos seguintes caracteres: !, @, #, $, %, ¨, &, *, (, ).\r\nNão pode conter aspas simples ou duplas, apóstrofo ou barra invertida.'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `usuario`
+--
+
+INSERT INTO `usuario` (`nome`, `senha`) VALUES
+('neo', 'admin1234*'),
+('admin', 'senh4!forte'),
+('outro', 'p!nd4m0nh4ng4b@');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `autor`
+-- Indexes for table `autor`
 --
 ALTER TABLE `autor`
   ADD PRIMARY KEY (`cod_autor`);
 
 --
--- Índices de tabela `livro`
+-- Indexes for table `livro`
 --
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`cod_livro`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `autor`
+-- AUTO_INCREMENT for table `autor`
 --
 ALTER TABLE `autor`
   MODIFY `cod_autor` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT de tabela `livro`
+-- AUTO_INCREMENT for table `livro`
 --
 ALTER TABLE `livro`
   MODIFY `cod_livro` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
